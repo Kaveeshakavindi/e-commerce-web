@@ -1,0 +1,226 @@
+*{
+    
+}
+
+.title{
+    color: #000;
+    font-family: 'Prompt', sans-serif;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    max-width: 50%; /* set the maximum width of the container */
+    margin: 0 auto;
+
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  margin-top: 100px;
+}
+
+.main-img{
+    text-align: center;
+    display: block;
+}
+
+.img-para p {
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg); 
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    max-height: 400px;
+    text-align: left;
+    transform-origin: left; 
+    margin-right: 50px;
+    line-height: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.img-para-span{
+    font-weight: 600;
+}
+
+.home-about{
+    font-size: 2rem;
+    font-weight: 600;
+    width: 50%;
+    margin: 10rem auto ;
+    font-family: 'Prompt', sans-serif;
+}
+
+.img-container2{
+    display: flex;
+    margin: 10%;
+}
+
+.home-para1{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    width: 50%;
+    line-height: 2rem;
+}
+
+
+
+.main-img2{
+    width: 80%;
+    text-align: right;
+    margin-top: 8%;
+    margin-left: 0;
+   
+}
+
+.year{
+    text-align: right;
+    width: 80%;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.main-img2, .year{
+    position:absolute;
+    text-align: right;
+    
+}
+
+.home-para2{
+   margin-top: 40%;
+   width: 50%;
+   font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    text-align: right;
+  margin-right: 0;
+  margin-right: 35%;
+}
+
+.home-para2 .main-img2 {
+    display: flex;
+    justify-content: baseline;
+    position: absolute;
+    
+}
+
+.pieces-container{
+    display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+
+}
+
+.pieces-para{
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg); 
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+
+.pieces-para h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pieces-para p{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.piece-container{
+    flex: 0 0 auto;
+    display: block;
+  width: fit-content;
+  height: fit-content;
+  
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.piece-no{
+ 
+ font-family: 'Prompt', sans-serif;
+ font-weight: 600;
+}
+
+.piece-img{
+   
+}
+
+
+
+.piece-title{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 200;
+}
+
+.piece-price{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+
+.cta-btn{
+    padding-top: 20px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

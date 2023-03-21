@@ -14,12 +14,14 @@ import About from "./routes/About";
 import Contact from "./routes/Contact";
 import ErrorPage from "./routes/ErrorPage";
 import Bag from "./routes/Bag";
+import Footer from "./components/footer/footer"
 
 const AppLayout = () => {
   return (
     <>
       <Navbar />
       <Outlet />
+      <Footer/>
     </>
   );
 };

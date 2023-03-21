@@ -23,12 +23,10 @@ function Navbar() {
         <nav className="navbar">
           <div className="navbar-container container">
 
-            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              The Arc.
-            </Link>
+            
 
             <div className="menu-icon" onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
+              {click ? <FaTimes color="black"/> : <FaBars color="black"/>}
             </div>
 
             <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -59,13 +57,16 @@ function Navbar() {
 
             </ul>
 
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              The Arc.
+            </Link>
+
             <NavLink to="/bag"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
                   } id="bag"
                   onClick={closeMobileMenu}>
-              <BsHandbag/>
-                  Bag
+                  Bag (0)
             </NavLink>
           </div>
         </nav>

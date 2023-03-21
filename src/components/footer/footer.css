@@ -1,0 +1,48 @@
+footer{
+    width: 100%;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 8%;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 200;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+
+.footer-logo{
+    font-weight: bold;
+}
+
+.footer-email{
+
+}
+
+
+.footer-email input{
+    border-style: none;
+    border-bottom: 1px solid rgb(221, 168, 168);
+    font-size: 15px;
+    font-family: 'Prompt', sans-serif;
+    padding: 10px;
+}
+
+.footer-container button{
+    border-style: none;
+    background: transparent;
+    color: rgb(221, 168, 168);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer-container input::after{
+    border-style: none;
+}
